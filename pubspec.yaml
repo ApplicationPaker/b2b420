@@ -1,0 +1,143 @@
+name: cirilla
+description: Cirilla - Multipurpose Flutter App For Wordpress & Woocommerce
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+6
+
+environment:
+  sdk: ">=2.17.1 <3.0.0"
+
+dependencies:
+  animated_text_kit: ^4.2.1
+  audio_session: ^0.1.6+1
+  awesome_bottom_bar: ^1.2.1
+  awesome_drawer_bar: ^1.0.0
+  awesome_icons: ^1.1.0
+  cached_network_image: ^3.2.1
+  chewie: ^1.3.0
+  collection: ^1.15.0
+  convert: ^3.0.1
+  crypto: ^3.0.1
+  cupertino_icons: ^1.0.4
+  device_info_plus: ^9.0.2
+  dio: ^5.0.3
+  dotted_border: ^2.0.0+1
+  feather_icons: ^1.2.0
+  #firebase_analytics: ^10.1.6
+  firebase_auth: ^4.3.0
+  firebase_core: ^2.8.0
+  firebase_database: ^10.0.16
+  firebase_dynamic_links: ^5.0.17
+  firebase_messaging: ^14.3.0
+  firebase_messaging_web: ^3.1.4
+  flutter:
+    sdk: flutter
+  flutter_barcode_scanner: ^2.0.0
+  flutter_chat_types: ^3.4.1
+  flutter_chat_ui: ^1.6.0
+  flutter_colorpicker: ^1.0.3
+  #flutter_facebook_auth: ^5.0.8
+  flutter_hooks: ^0.19.0
+  flutter_html: ^3.0.0-alpha.5
+  flutter_html_all:
+    path: ./packages/flutter_html_all
+  flutter_local_notifications: ^15.1.0+1
+  flutter_localizations:
+    sdk: flutter
+  flutter_mobx: ^2.0.2
+  flutter_slidable: ^3.0.0
+  flutter_spinkit: ^5.1.0
+  flutter_sticky_header: ^0.6.0
+  flutter_swiper:
+    git: https://github.com/AppCheap/flutter_swiper
+  geolocator: ^9.0.1
+  google_fonts: ^4.0.3
+  google_geocoding: ^0.2.0
+  google_maps_flutter: ^2.1.1
+  google_maps_flutter_web: ^0.5.1
+  google_sign_in: ^6.0.2
+  gutenberg_blocks:
+    path: ../gutenberg_blocks
+  html: ^0.15.0
+  html_unescape: ^2.0.0
+  http: ^0.13.4
+  iframe_view:
+    path: ./plugins/iframe_view
+  image_picker: ^1.0.0
+  in_app_review: ^2.0.4
+  intl: ^0.18.0
+  json_annotation: ^4.4.0
+  just_audio: ^0.9.28
+  mobx: ^2.0.5
+  path_provider: ^2.0.10
+  payment_base:
+    path: ./packages/payment_base
+  permission_handler: ^10.2.0
+  photo_view: ^0.14.0
+  pin_code_fields: ^8.0.1
+  provider: ^6.0.1
+  rxdart: ^0.27.3
+  share: ^2.0.4
+  shared_preferences: ^2.0.11
+  shared_preferences_web: ^2.0.2
+  shimmer: ^3.0.0
+  sign_in_with_apple: ^5.0.0
+  table_calendar: ^3.0.6
+  ui:
+    path: ../ui
+  url_launcher: ^6.0.17
+  video_player: ^2.2.18
+  video_shop_flutter:
+    git:
+      url: https://github.com/AppCheap/flutter_shopping_video.git
+  webview_flutter: ^3.0.4
+  woo_booking:
+    path: ./packages/woo_booking
+
+dependency_overrides:
+  intl: ^0.17.0
+dev_dependencies:
+  build_runner: ^2.1.5
+
+  # App's launcher icon
+  flutter_launcher_icons: ^0.13.1
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+  json_serializable: ^6.1.1
+  mobx_codegen: ^2.0.4
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+# The following section is specific to Flutter.
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
+  assets:
+    - assets/lang/
+    - assets/images/
+    - assets/images/payment/
+    - google_fonts/
